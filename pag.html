@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pagamento - Sea Shield</title>
 <style>
 /* Reset de Estilos Padrão */
@@ -83,7 +82,6 @@ footer {
   width: 100%; /* Adicionei para garantir que o rodapé ocupe toda a largura */
 }
 
-
 /* Estilos para o Pop-up */
 .popup-overlay {
   display: none;
@@ -111,6 +109,22 @@ footer {
   right: 10px;
   cursor: pointer;
 }
+
+/* Estilos para a animação de carregamento */
+@keyframes loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #007acc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: loading 1s linear infinite;
+  margin: 0 auto;
+}
 </style>
 </head>
 <body>
@@ -134,7 +148,7 @@ footer {
         <label for="name">Nome no Cartão:</label>
         <input type="text" id="name" name="name" required>
         
-        <button type="button" onclick="openPopup()">Confirmar Pagamento</button>
+        <button type="button" onclick="performPayment()">Confirmar Pagamento</button>
       </form>
     </section>
     
@@ -148,39 +162,37 @@ footer {
   </main>
 
   <footer>
-        <p>&copy; 2023 Sea Shield - Ajuda aos Animais Marinhos</p>
-        <li style="color: rgb(241, 236, 236);"><a href=".html">Termos de Serviço</a></li>
-    </footer>
+    <p>&copy; 2023 Sea Shield - Ajuda aos Animais Marinhos</p>
+    <li style="color: rgb(241, 236, 236);"><a href=".html">Termos de Serviço</a></li>
+  </footer>
+
 <script>
-function openPopup() {
-  document.getElementById('popup').style.display = 'flex';
+function performPayment() {
+  const loadingSpinner = document.createElement('div');
+  loadingSpinner.className = 'loading-spinner';
+  document.body.appendChild(loadingSpinner);
+
+  const confirmButton = document.querySelector('button');
+  confirmButton.disabled = true;
+
   setTimeout(function() {
-    closePopup();
-    window.location.href = "index.html"; // Redirecionamento após 5 segundos
-  }, 5000); // 5000 milissegundos = 5 segundos
+    document.body.removeChild(loadingSpinner);
+    confirmButton.disabled = false;
+    showPopup();
+    setTimeout(function() {
+      closePopup();
+      window.location.href = "index.html";
+    }, 5000);
+  }, 5000);
+}
+
+function showPopup() {
+  document.getElementById('popup').style.display = 'flex';
 }
 
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
 }
-   var userAgent = navigator.userAgent.toLowerCase();
-
-    if (userAgent.indexOf('chrome') > -1) {
-      // Ações específicas para o Chrome
-      document.body.style.backgroundColor = '';
-    } else if (userAgent.indexOf('firefox') > -1) {
-      // Ações específicas para o Firefox
-      document.body.style.backgroundColor = '';
-    } else if (userAgent.indexOf('safari') > -1) {
-      // Ações específicas para o Safari
-      document.body.style.backgroundColor = '';
-    } else if (userAgent.indexOf('opera') > -1 || userAgent.indexOf('opr') > -1) {
-      // Ações específicas para o Opera
-      document.body.style.backgroundColor = '';
-    } else {
-      // Ações para outros navegadores
-      document.body.style.backgroundColor = 'white';
-    }
 </script>
 </body>
 </html>
