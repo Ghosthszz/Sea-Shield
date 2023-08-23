@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -221,12 +222,12 @@
     <nav>
         <ul>
             <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#ajudar">Como Ajudar</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#produto" id="linkpr">Produto</a></li>
+            <li><a href="#sobre">Contribuir</a></li>
             <li><a href="#contato" id="linkContato">Contato</a></li>
            
         </ul>
-        <button id="logs" class="Btn">
+        <button id="log" class="Btn">
   
             <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
             
@@ -240,43 +241,63 @@
         <section class="section" id="sobre">
             <p><strong>Sobre Nós</strong></p>
             <p class="minha-fonte">
-                Bem-vindo à Sea Shield! Somos uma empresa dedicada apaixonadamente à preservação e proteção dos preciosos habitantes dos oceanos...
-            </p>
+                Nossa Jornada:
+                Fundada por um grupo de entusiastas apaixonados pelo oceano e suas maravilhas, a Sea Shield nasceu da visão de criar uma empresa que não apenas fornecesse produtos e serviços excepcionais, mas que também desempenhasse um papel fundamental na preservação dos ecossistemas marinhos e na redução de riscos para os marinheiros. Desde o início, adotamos uma abordagem orientada para a inovação, buscando constantemente novas maneiras de melhorar as operações marítimas e minimizar os impactos ambientais.</p>
         </section>
-        <section class="section" id="ajudar">
-            <h2><strong>Como Ajudar</strong></h2>
-            <p>
-                <strong>Doações:</strong> Suas generosas doações são essenciais para financiar nossas pesquisas, projetos de conservação e iniciativas de resgate...
-            </p>
-        </section>
-        <section class="section" id="projetos">
-            <h2><strong>Projetos</strong></h2>
-            <p>
-                <strong>Resgate e Reabilitação:</strong> Nossa equipe dedicada de especialistas em vida marinha trabalha incansavelmente para resgatar e reabilitar animais marinhos feridos, enfermos ou ameaçados...
-            </p>
-        </section>
-       
-            </p>
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
+
+        <section class="section" id="sobre">
+            <p><strong>Nossa Missão</strong></p>
+            <p class="minha-fonte">
+                
+                Nossa missão na Sea Shield é clara: capacitar a indústria marítima com soluções avançadas de proteção, segurança e eficiência, enquanto promovemos práticas sustentáveis. Através de pesquisa de ponta, colaboração global e um compromisso inabalável com a excelência, trabalhamos para definir os padrões mais altos em tecnologia náutica.</section>
+
+        <section class="section" id="sobre">
+            <p><strong>Nossos Valores:</strong></p>
+            <p class="minha-fonte">
+                Inovação: Abraçamos a mudança e promovemos a inovação contínua em todos os aspectos de nossas operações. Acreditamos que a exploração de novas ideias nos permite oferecer soluções mais inteligentes e eficazes.
+
+Qualidade: A qualidade está no cerne de tudo o que fazemos. Desde a concepção até a entrega, nos esforçamos para superar as expectativas e entregar produtos e serviços que garantam a confiança de nossos clientes.
+
+Sustentabilidade: Reconhecemos a importância de proteger o ambiente marinho para as gerações futuras. Integramos práticas sustentáveis em nosso trabalho diário e buscamos constantemente maneiras de minimizar nosso impacto ambiental.
+
+Parceria: A colaboração é fundamental para o nosso sucesso. Trabalhamos em estreita colaboração com nossos clientes, parceiros e comunidades para alcançar objetivos mútuos e impulsionar o crescimento coletivo.
+            </section>
+            <button id="prl" >Ver produtos</button>
+      
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
     // Seleciona o botão pelo ID
-    const meuBotao = document.getElementById("logs");
+    const meuBotao = document.getElementById("log");
 
     // Define o evento de clique no botão
     meuBotao.addEventListener("click", function() {
         // Redireciona para outra página quando o botão for clicado
-        window.location.href = "index.html";
+        window.location.href = "entrar.html";
     });
 });
-                 const linkContato = document.getElementById('linkContato');
+
+    const linkContato = document.getElementById('linkContato');
 
     linkContato.addEventListener('click', function(event) {
         event.preventDefault(); // Impede o comportamento padrão do link
         window.location.href = 'formss.html'; // Substitua pelo URL da sua página de contato
     });
 
-            </script>
-        </section>
+    const linkProduto = document.getElementById('linkpr');
+
+linkProduto.addEventListener('click', function(event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    window.location.href = 'produtos.html'; // Substitua pelo URL da sua página de produtos
+});
+const verProdutosBtn = document.getElementById('prl');
+
+verProdutosBtn.addEventListener('click', function() {
+    // Redireciona para a página de produtos quando o botão for clicado
+    window.location.href = 'produtos.html';
+});
+
+
+        </script>
     </div>
     <footer>
         <p>&copy; 2023 Sea Shield - Ajuda aos Animais Marinhos</p>
