@@ -223,6 +223,7 @@
             <li><a href="#sobre">Sobre Nós</a></li>
             <li><a href="#ajudar">Como Ajudar</a></li>
             <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato" id="linkContato">Contato</a></li>
            
         </ul>
         <button id="logs" class="Btn">
@@ -281,6 +282,12 @@
         window.location.href = "index.html";
     });
 });
+                 const linkContato = document.getElementById('linkContato');
+
+    linkContato.addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+        window.location.href = 'formss.html'; // Substitua pelo URL da sua página de contato
+    });
 
             </script>
         </section>
