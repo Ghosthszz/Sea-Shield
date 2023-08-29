@@ -422,15 +422,17 @@ button[type="submit"]:hover {
         <li style="color: rgb(241, 236, 236);"><a href=".html">Termos de Serviço</a></li>
     </footer>
    
-    <script>
-      
-const produtos = [
-    { nome: 'Produto 1', preco: 50.00 },
-    { nome: 'Produto 2', preco: 00.00 }
-];
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const produtos = [
+                { nome: 'Produto 1', preco: 50.00 },
+                { nome: 'Produto 2', preco: 00.00 }
+            ];
 
-const listaCarrinho = document.getElementById('lista-carrinho');
-const adicionarAoCarrinhoBotoes = document.querySelectorAll('.adicionar-ao-carrinho');
+            const listaCarrinho = document.getElementById('lista-carrinho');
+            const adicionarAoCarrinhoBotoes = document.querySelectorAll('.adicionar-ao-carrinho');
+
+          
 
 adicionarAoCarrinhoBotoes.forEach((botao, index) => {
     botao.addEventListener('click', () => {
