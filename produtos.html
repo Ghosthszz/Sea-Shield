@@ -1,501 +1,416 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sea Shield - Ajuda aos Animais Marinhos</title>
-    <style>
-      /* Estilos Reset */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sea Shield - Ajuda aos Animais Marinhos</title>
+<style>
+/* Estilos Reset */
 body, h1, h2, h3, p, ul, li, img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    min-height: 32px; /* Isso garante que o conteúdo se estenda até o fundo da tela. */
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+min-height: 32px; /* Isso garante que o conteúdo se estenda até o fundo da tela. */
 }
-
 /* Estilos Gerais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    line-height: 1.6;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Isso garante que o conteúdo se estenda até o fundo da tela. */
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+line-height: 1.6;
+color: #333;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+margin: 0;
+padding: 0;
+min-height: 100vh; /* Isso garante que o conteúdo se estenda até o fundo da tela. */
 }
-
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem; /* Aumente o valor para aumentar o espaço ao redor do conteúdo */
+max-width: 1200px;
+margin: 0 auto;
+padding: 4rem; /* Aumente o valor para aumentar o espaço ao redor do conteúdo */
 }
-
 /* Cabeçalho */
 header {
-    background-color: #8c52ff;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+background-color: #8c52ff;
+color: white;
+text-align: center;
+padding: 1rem;
 }
-
 .header-content {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+display: flex;
+align-items: center;
+margin-bottom: 1rem;
 }
-
 .logo {
-    width: 110px;
-    height: 110px;
-    margin-right: 1rem;
+width: 110px;
+height: 110px;
+margin-right: 1rem;
 }
-
 /* Navegação */
 nav ul {
-    list-style: none;
-    text-align: center;
-    background-color: #333;
-    padding: 1rem 0;
+list-style: none;
+text-align: center;
+background-color: #333;
+padding: 1rem 0;
 }
-
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+display: inline;
+margin-right: 1rem;
 }
-
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
+text-decoration: none;
+color: white;
+font-weight: bold;
+transition: color 0.3s;
 }
-
 nav ul li a:hover {
-    color: #0074D9;
+color: #0074D9;
 }
-
 /* Seções */
 .section {
-    margin-bottom: 2rem;
+margin-bottom: 2rem;
 }
-
 /* Rodapé */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+background-color: #333;
+color: white;
+text-align: center;
+padding: 1rem;
 }
-
 .minha-fonte {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 #meu-paragrafo {
-    font-size: 36px;
+font-size: 36px;
 }
-
 /* Formulário */
 form {
-    background-color: #ffffff;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+background-color: #ffffff;
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
 }
-
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 3px;
 }
-
 button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
 }
-
 button[type="submit"]:hover {
-    background-color: #0056b3;
+background-color: #0056b3;
 }
-
 /* Estilos do botão */
 .Btn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition-duration: .3s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-    background-color: rgb(163, 142, 255);
+display: flex;
+align-items: center;
+justify-content: flex-start;
+width: 45px;
+height: 45px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+transition-duration: .3s;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+background-color: rgb(163, 142, 255);
 }
-
 .sign {
-    width: 100%;
-    transition-duration: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+width: 100%;
+transition-duration: .3s;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-
 .sign svg {
-    width: 17px;
+width: 17px;
 }
-
 .sign svg path {
-    fill: white;
+fill: white;
 }
-
 .Btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    overflow: hidden;
-    transition-duration: 0.3s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-    background-color: rgb(41, 41, 245);
+position: absolute;
+top: 20px;
+right: 20px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+width: 45px;
+height: 45px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+overflow: hidden;
+transition-duration: 0.3s;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+background-color: rgb(41, 41, 245);
 }
-
 .Btn:hover {
-    width: 125px;
-    border-radius: 40px;
-    transition-duration: .3s;
+width: 125px;
+border-radius: 40px;
+transition-duration: .3s;
 }
-
 .Btn:hover .sign {
-    width: 30%;
-    transition-duration: .3s;
-    padding-left: 20px;
+width: 30%;
+transition-duration: .3s;
+padding-left: 20px;
 }
-
 .Btn:hover .text {
-    opacity: 1;
-    width: 70%;
-    transition-duration: .3s;
-    padding-right: 10px;
+opacity: 1;
+width: 70%;
+transition-duration: .3s;
+padding-right: 10px;
 }
-
 .Btn:active {
-    transform: translate(2px ,2px);
+transform: translate(2px ,2px);
 }
-
 .contactButton {
-    background: #7079f0;
-    color: white;
-    font-family: inherit;
-    padding: 0.45em;
-    padding-left: 1.0em;
-    font-size: 17px;
-    font-weight: 500;
-    border-radius: 0.9em;
-    border: none;
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 1.6em -0.6em #714da6;
-    overflow: hidden;
-    position: relative;
-    height: 2.8em;
-    padding-right: 3em;
+background: #7079f0;
+color: white;
+font-family: inherit;
+padding: 0.45em;
+padding-left: 1.0em;
+font-size: 17px;
+font-weight: 500;
+border-radius: 0.9em;
+border: none;
+letter-spacing: 0.05em;
+display: flex;
+align-items: center;
+box-shadow: inset 0 0 1.6em -0.6em #714da6;
+overflow: hidden;
+position: relative;
+height: 2.8em;
+padding-right: 3em;
 }
-
 .iconButton {
-    margin-left: 1em;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.2em;
-    width: 2.2em;
-    border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #7a8cf3;
-    right: 0.3em;
-    transition: all 0.3s;
+margin-left: 1em;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 2.2em;
+width: 2.2em;
+border-radius: 0.7em;
+box-shadow: 0.1em 0.1em 0.6em 0.2em #7a8cf3;
+right: 0.3em;
+transition: all 0.3s;
 }
-
 .contactButton:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em #5566c2;
+transform: translate(-0.05em, -0.05em);
+box-shadow: 0.15em 0.15em #5566c2;
 }
-
 .contactButton:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em #5566c2;
+transform: translate(0.05em, 0.05em);
+box-shadow: 0.05em 0.05em #5566c2;
 }
-
 /* Estilos adicionais para a tela de compras */
 #produto {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
 }
-
 .produto {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 20px);
-    background-color: #fff;
+border: 1px solid #ccc;
+padding: 15px;
+border-radius: 5px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+width: calc(33.33% - 20px);
+background-color: #fff;
 }
-
 .produto h3 {
-    margin-bottom: 10px;
+margin-bottom: 10px;
 }
-
 /* ... Seus estilos anteriores ... */
-
 /* Estilo para botão "Adicionar ao Carrinho" */
 .adicionar-ao-carrinho {
-    background-color: #39b54a;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    font-weight: bold;
-    text-transform: uppercase;
+background-color: #39b54a;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 25px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+font-weight: bold;
+text-transform: uppercase;
 }
-
 .adicionar-ao-carrinho:hover {
-    background-color: #338c3c;
-    transform: scale(1.05);
+background-color: #338c3c;
+transform: scale(1.05);
 }
-
 /* Estilo para botão "Finalizar Compra" */
 #finalizar-compra {
-    background-color: #f49e42;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 15px;
+background-color: #f49e42;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 25px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+font-weight: bold;
+text-transform: uppercase;
+margin-top: 15px;
 }
-
 #finalizar-compra:hover {
-    background-color: #e38836;
-    transform: scale(1.05);
+background-color: #e38836;
+transform: scale(1.05);
 }
-
 /* Estilo para produtos */
 .produto {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.2s;
-    text-align: center;
-    align-items: center;
-
+border: 1px solid #ddd;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+background-color: #fff;
+transition: transform 0.2s;
+text-align: center;
+align-items: center;
 }
-
 .produto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+transform: translateY(-5px);
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 /* Estilo para ícone do botão */
 .iconButton {
-    margin-left: 1em;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5em;
-    width: 2.5em;
-    border-radius: 50%;
-    box-shadow: 0.2em 0.2em 0.8em rgba(0, 0, 0, 0.2);
-    right: 0.5em;
-    transition: all 0.3s;
-    background-color: #7079f0;
-    color: white;
+margin-left: 1em;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 2.5em;
+width: 2.5em;
+border-radius: 50%;
+box-shadow: 0.2em 0.2em 0.8em rgba(0, 0, 0, 0.2);
+right: 0.5em;
+transition: all 0.3s;
+background-color: #7079f0;
+color: white;
 }
-
 .iconButton:hover {
-    transform: scale(1.1);
-    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+transform: scale(1.1);
+box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 #opaa {
-    color: #8c52ff;
-    text-align: center;
-    font-size: 30px;
+color: #8c52ff;
+text-align: center;
+font-size: 30px;
 }
 #rd {
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #rede {
-    color: black;
-    font-size: 25px;
+color: black;
+font-size: 25px;
 }
 #pr {
-    color: #338c3c;
+color: #338c3c;
 }
-    </style>
+</style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://ghosthszz.github.io/Sea-Shield/sea.png" alt="Sea Shield Logo" class="logo">
-            <h1><strong class="minha-fonte" id="meu-paragrafo">Sea Shield - Produtos</strong></h1>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html" id="linkpr">Produto</a></li>
-            <li><a href="contribua.html">Contribuir</a></li>
-            <li><a href="formss.html" id="linkContato">Contato</a></li>
-        </ul>
-        <button id="log" class="Btn">
-            <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c-17.7 0-32 14.3-32 32s-14.3 32-32 32z"></path></svg></div>
-            <div class="text">Entrar</div>
-        </button>
-    </nav>
-   
-    <section id="produto" class="section" class="produto" >
-       
-        <div class="produto">
-            <h1 id="rede" >Rede de limpeza:</h1>
-            <p id="rd" >Descrição do Produto: <br>
-              Apresentando a inovadora "Rede de Limpeza Marinha": a solução definitiva para preservar a beleza intocada dos ecossistemas marinhos. Projetada com maestria para abordar os desafios únicos da limpeza oceânica, nossa rede combina engenharia avançada e materiais sustentáveis para criar um instrumento poderoso na luta contra a poluição marinha.
-
-            </p>
-            <p id="pr" >Preço: R$99.00</p>
-            <button class="adicionar-ao-carrinho">Adicionar ao Carrinho</button>
-        </div>
-        <div class="produto">
-            <h3>Produto 2</h3>
-            <p>Descrição do Produto 2</p>
-            <p>Preço: R$00.00</p>
-            <button class="adicionar-ao-carrinho">Adicionar ao Carrinho</button>
-        </div>
-    </section>
-    <section id="carrinho" class="section">
-        <h2>Carrinho de Compras</h2>
-        <ul id="lista-carrinho"></ul>
-        <button id="finalizar-compra">Finalizar Compra</button>
-    </section>
-    <footer id="oi" >
-        <p>&copy; 2023 Sea Shield - Ajuda aos Animais Marinhos</p>
-        <li style="color: rgb(241, 236, 236);"><a href=".html">Termos de Serviço</a></li>
-    </footer>
-   
+<header>
+<div class="header-content">
+<img src="https://ghosthszz.github.io/Sea-Shield/sea.png" alt="Sea Shield Logo" class="logo">
+<h1><strong class="minha-fonte" id="meu-paragrafo">Sea Shield - Produtos</strong></h1>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="produtos.html" id="linkpr">Produto</a></li>
+<li><a href="contribua.html">Contribuir</a></li>
+<li><a href="formss.html" id="linkContato">Contato</a></li>
+</ul>
+<button id="log" class="Btn">
+<div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c-17.7 0-32 14.3-32 32s-14.3 32-32 32z"></path></svg></div>
+<div class="text">Entrar</div>
+</button>
+</nav>
+<section id="produto" class="section" class="produto" >
+<div class="produto">
+<h1 id="rede" >Rede de limpeza:</h1>
+<p id="rd" >Descrição do Produto: <br>
+Apresentando a inovadora "Rede de Limpeza Marinha": a solução definitiva para preservar a beleza intocada dos ecossistemas marinhos. Projetada com maestria para abordar os desafios únicos da limpeza oceânica, nossa rede combina engenharia avançada e materiais sustentáveis para criar um instrumento poderoso na luta contra a poluição marinha.
+</p>
+<p id="pr" >Preço: R$99.00</p>
+<a href="pag.html"><button class="adicionar-ao-carrinho" >Comprar</button></a>
+</section>
+<footer id="oi" >
+<p>&copy; 2023 Sea Shield - Ajuda aos Animais Marinhos</p>
+<li style="color: rgb(241, 236, 236);"><a href=".html">Termos de Serviço</a></li>
+</footer>
 <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const produtos = [
-                { nome: 'Produto 1', preco: 50.00 },
-                { nome: 'Produto 2', preco: 00.00 }
-            ];
-
-            const listaCarrinho = document.getElementById('lista-carrinho');
-            const adicionarAoCarrinhoBotoes = document.querySelectorAll('.adicionar-ao-carrinho');
-
-          
-
-adicionarAoCarrinhoBotoes.forEach((botao, index) => {
-    botao.addEventListener('click', () => {
-        const produto = produtos[index];
-        const itemCarrinho = document.createElement('li');
-        itemCarrinho.innerHTML = `${produto.nome} - $${produto.preco.toFixed(2)}`;
-        listaCarrinho.appendChild(itemCarrinho);
-    });
-});
-
-const finalizarCompraBotao = document.getElementById('finalizar-compra');
-
-finalizarCompraBotao.addEventListener('click', () => {
-    const itensCarrinho = listaCarrinho.querySelectorAll('li'); // Correção aqui
-    let total = 0;
-
-    itensCarrinho.forEach(item => {
-        const preco = parseFloat(item.textContent.split(' - ')[1].replace('$', ''));
-        total += preco;
-    });
-
-    alert(`Total da Compra: $${total.toFixed(2)}`);
-    window.location.href = 'pag.html'; // Redirecionamento aqui
-});
-
 document.addEventListener("DOMContentLoaded", function() {
-    // Seu código de redirecionamento aqui
+// Seleciona o botão pelo ID
+const meuBotao = document.getElementById("log");
+// Define o evento de clique no botão
+meuBotao.addEventListener("click", function() {
+// Redireciona para outra página quando o botão for clicado
+window.location.href = "entrar.html";
 });
-
-const linkContato = document.getElementById('linkContato');
-
-linkContato.addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = 'formss.html';
 });
-
-const linkProduto = document.getElementById('linkpr');
-
-linkProduto.addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = 'produtos.html';
-});
-
-const verProdutosBtn = document.getElementById('prl');
-
-verProdutosBtn.addEventListener('click', function() {
-    window.location.href = 'produtos.html';
-});
-
-var userAgent = navigator.userAgent.toLowerCase();
-
-if (userAgent.indexOf('chrome') > -1) {
-    document.body.style.backgroundColor = '';
-} else if (userAgent.indexOf('firefox') > -1) {
-    document.body.style.backgroundColor = '';
-} else if (userAgent.indexOf('safari') > -1) {
-    document.body.style.backgroundColor = '';
-} else if (userAgent.indexOf('opera') > -1 || userAgent.indexOf('opr') > -1) {
-    document.body.style.backgroundColor = '';
-} else {
-    document.body.style.backgroundColor = 'white';
+</script>
+<!-- Code injected by live-server -->
+<script>
+// <![CDATA[ <-- For SVG support
+if ('WebSocket' in window) {
+(function () {
+function refreshCSS() {
+var sheets = [].slice.call(document.getElementsByTagName("link"));
+var head = document.getElementsByTagName("head")[0];
+for (var i = 0; i < sheets.length; ++i) {
+var elem = sheets[i];
+var parent = elem.parentElement || head;
+parent.removeChild(elem);
+var rel = elem.rel;
+if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
 }
-
-    </script>
+parent.appendChild(elem);
+}
+}
+var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+var address = protocol + window.location.host + window.location.pathname + '/ws';
+var socket = new WebSocket(address);
+socket.onmessage = function (msg) {
+if (msg.data == 'reload') window.location.reload();
+else if (msg.data == 'refreshcss') refreshCSS();
+};
+if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+console.log('Live reload enabled.');
+sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+}
+})();
+}
+else {
+console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
 </body>
 </html>
