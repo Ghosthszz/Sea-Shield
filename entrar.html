@@ -1,138 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Entrar</title>
-</head>
-<body>
     <style>
-        /* Estilos Gerais */
+/* Estilos Gerais */
 body {
-    font-family: 'Courier New', monospace;
-    background-color: #282c36;
-    color: #dcdcdc;
-    margin: 0;
-    padding: 0;
+font-family: 'Courier New', monospace;
+background-color: #282c36;
+color: #dcdcdc;
+margin: 0;
+padding: 0;
 }
-
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem;
+max-width: 400px;
+margin: 0 auto;
+padding: 2rem;
 }
-
 /* Cabeçalho */
 .header {
-    background-color: #1e222a;
-    text-align: center;
-    padding: 1rem 0;
+background-color: #1e222a;
+text-align: center;
+padding: 1rem 0;
 }
-
 .logo img {
-    width: 80px;
-    height: 80px;
+width: 80px;
+height: 80px;
 }
-
 .logo h1 {
-    font-size: 24px;
-    margin-top: 10px;
+font-size: 24px;
+margin-top: 10px;
 }
-
 /* Formulário */
 .reset-form {
-    background-color: #1e222a;
-    border-radius: 5px;
-    padding: 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+background-color: #1e222a;
+border-radius: 5px;
+padding: 2rem;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 label {
-    display: block;
-    margin-bottom: 8px;
+display: block;
+margin-bottom: 8px;
 }
-
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #444;
-    border-radius: 3px;
-    background-color: #333;
-    color: #dcdcdc;
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #444;
+border-radius: 3px;
+background-color: #333;
+color: #dcdcdc;
 }
-
 button.submit-button {
-    background-color: #0074D9;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button.submit-button:hover {
-    background-color: #0056b3;
+background-color: #0074D9;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 3px;
+cursor: pointer;
+transition: background-color 0.3s;
 }
 
 /* Rodapé */
 .footer {
-    background-color: #1e222a;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+background-color: #1e222a;
+text-align: center;
+padding: 1rem 0;
+position: absolute;
+bottom: 0;
+width: 100%;
 }
+#login_button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave à cor de fundo */
 
+}
     </style>
+</head>
+<body>
+    
     <header class="header">
         <div class="logo">
-            <img src="sea.png" alt="Logo">
+            <img src="https://ghosthszz.github.io/Sea-Shield/sea.png" alt="Logo">
             <h1>Conecte-se</h1>
         </div>
     </header>
 
     <div class="container">
-        <form class="reset-form">
+        <form class="reset-form" onsubmit="return validateForm()">
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="new-password">Senha:</label>
             <input type="password" id="new-password" name="new_password" required>
 
-            
-
-            <button id="logout-button" type="submit" class="submit-button">Entrar</button>
+            <button id="login_button" type="submit">Entrar</button>
         </form>
+        <p id="error-message" style="color: red;"></p>
     </div>
+
     <script>
-        document.getElementById("logout-button").addEventListener("click", function() {
-        window.location.href = "logado.html";
-    });
-           var userAgent = navigator.userAgent.toLowerCase();
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("new-password").value;
 
-    if (userAgent.indexOf('chrome') > -1) {
-      // Ações específicas para o Chrome
-      document.body.style.backgroundColor = '';
-    } else if (userAgent.indexOf('firefox') > -1) {
-      // Ações específicas para o Firefox
-      document.body.style.backgroundColor = '';
-    } else if (userAgent.indexOf('safari') > -1) {
-      // Ações específicas para o Safari
-      document.body.style.backgroundColor = '';
-    } else if (userAgent.indexOf('opera') > -1 || userAgent.indexOf('opr') > -1) {
-      // Ações específicas para o Opera
-      document.body.style.backgroundColor = '';
-    } else {
-      // Ações para outros navegadores
-      document.body.style.backgroundColor = 'white';
-    }
+            // Verifica se o email e a senha estão corretos (substitua com suas próprias verificações)
+            if (email === "sea@gmail.com" && password === "Teste1234") {
+                // Redireciona para a página index.html
+                window.location.href = "logado.html";
+                return false; // Impede o envio do formulário
+            } else {
+                document.getElementById("error-message").textContent = "Credenciais inválidas. Por favor, tente novamente.";
+                return false; // Impede o envio do formulário
+            }
+        }
     </script>
-
-    
 </body>
+
 </html>
