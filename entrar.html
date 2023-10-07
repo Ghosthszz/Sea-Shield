@@ -111,29 +111,19 @@ width: 100%;
 
     <script>
         function validateForm() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("new-password").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("new-password").value;
 
-    // Carregar dados do arquivo usuário.js (assumindo que contém um objeto com usuários e senhas)
-    fetch('usuário.js')
-        .then(response => response.json())
-        .then(data => {
-            // Verifica se o email e a senha estão corretos
-            var users = data.usuários;
-            if (users[email] && users[email] === password) {
-                // Redireciona para a página index.html
-                window.location.href = "logado.html";
-            } else {
-                document.getElementById("error-message").textContent = "Credenciais inválidas. Por favor, tente novamente.";
-            }
-        })
-        .catch(error => {
-            console.error('Erro ao carregar dados do usuário:', error);
-            document.getElementById("error-message").textContent = "Erro ao verificar credenciais. Por favor, tente novamente mais tarde.";
-        });
-
-    return false; // Impede o envio do formulário
-}
+        // Verifica se o email e a senha estão corretos (substitua com suas próprias verificações)
+        if (email === "sea@gmail.com" && password === "Teste1234") {
+            // Redireciona para a página index.html
+            window.location.href = "logado.html";
+            return false; // Impede o envio do formulário
+        } else {
+            document.getElementById("error-message").textContent = "Credenciais inválidas. Por favor, tente novamente.";
+            return false; // Impede o envio do formulário
+        }
+    }
     </script>
 </body>
 
