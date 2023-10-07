@@ -1,9 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .company-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="company-title">Nome da Sua Empresa</div>
+        <div class="login-form">
+            <input class="login-input" type="text" id="usuario" placeholder="Usuário" required>
+            <input class="login-input" type="password" id="senha" placeholder="Senha" required>
+            <button class="login-button" onclick="validarLogin()">Login</button>
+        </div>
+    </div>
+
     <script src="usuários.js"></script>
     <script>
         function validarLogin() {
@@ -14,117 +82,10 @@
             if (usuarioValido) {
                 // Redireciona para a página logado.html
                 window.location.href = "logado.html";
-                // Impede o envio do formulário
-                return false;
             } else {
                 alert("Credenciais inválidas. Tente novamente.");
-                // Impede o envio do formulário
-                return false;
             }
         }
     </script>
-</head>
-    <style>
-/* Estilos Gerais */
-body {
-font-family: 'Courier New', monospace;
-background-color: #282c36;
-color: #dcdcdc;
-margin: 0;
-padding: 0;
-}
-.container {
-max-width: 400px;
-margin: 0 auto;
-padding: 2rem;
-}
-/* Cabeçalho */
-.header {
-background-color: #1e222a;
-text-align: center;
-padding: 1rem 0;
-}
-.logo img {
-width: 80px;
-height: 80px;
-}
-.logo h1 {
-font-size: 24px;
-margin-top: 10px;
-}
-/* Formulário */
-.reset-form {
-background-color: #1e222a;
-border-radius: 5px;
-padding: 2rem;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-label {
-display: block;
-margin-bottom: 8px;
-}
-input[type="email"],
-input[type="password"] {
-width: 100%;
-padding: 10px;
-margin-bottom: 15px;
-border: 1px solid #444;
-border-radius: 3px;
-background-color: #333;
-color: #dcdcdc;
-}
-button.submit-button {
-background-color: #0074D9;
-color: #fff;
-border: none;
-padding: 10px 20px;
-border-radius: 3px;
-cursor: pointer;
-transition: background-color 0.3s;
-}
-
-/* Rodapé */
-.footer {
-background-color: #1e222a;
-text-align: center;
-padding: 1rem 0;
-position: absolute;
-bottom: 0;
-width: 100%;
-}
-#login_button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave à cor de fundo */
-
-}
-    </style>
-</head>
-<body>
-    
-    <header class="header">
-        <div class="logo">
-            <img src="https://ghosthszz.github.io/Sea-Shield/sea.png" alt="Logo">
-            <h1>Conecte-se</h1>
-        </div>
-    </header>
-
-    <div class="container">
-        <form class="reset-form" onsubmit="return validateForm()">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="new-password">Senha:</label>
-            <input type="password" id="new-password" name="new_password" required>
-
-            <button id="login_button" type="submit">Entrar</button>
-        </form>
-        <p id="error-message" style="color: red;"></p>
-    </div>
 </body>
-
 </html>
