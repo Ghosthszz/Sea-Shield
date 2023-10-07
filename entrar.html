@@ -110,21 +110,23 @@ width: 100%;
     </div>
 
     <script>
-        function validateForm() {
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("new-password").value;
+function validarLogin() {
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
 
-        // Verifica se o email e a senha estão corretos (substitua com suas próprias verificações)
-        if (email === "sea@gmail.com" && password === "Teste1234") {
-            // Redireciona para a página index.html
-            window.location.href = "logado.html";
-            return false; // Impede o envio do formulário
-        } else {
-            document.getElementById("error-message").textContent = "Credenciais inválidas. Por favor, tente novamente.";
-            return false; // Impede o envio do formulário
+            var usuarioValido = verificarCredenciais(usuario, senha);
+            if (usuarioValido) {
+                window.location.href = "logado.html";
+                // Redirecionar ou executar outras ações após o login bem-sucedido
+            } else {
+                alert("Credenciais inválidas. Tente novamente.");
+            }
+
+            // Impede o envio do formulário
+            return false;
         }
-    }
     </script>
+    
 </body>
 
 </html>
