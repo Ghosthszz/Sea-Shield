@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Entrar</title>
-    <link rel="icon" href="https://ghosthszz.github.io/Sea-Shield/sea.png" type="image/png">
-    <style>
+    <title>Formulário de Login</title>
+    <script src="usuários.js"></script>
+    <script>
+        function validarLogin() {
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+
+            var usuarioValido = verificarCredenciais(usuario, senha);
+            if (usuarioValido) {
+                // Redireciona para a página logado.html
+                window.location.href = "logado.html";
+                // Impede o envio do formulário
+                return false;
+            } else {
+                alert("Credenciais inválidas. Tente novamente.");
+                // Impede o envio do formulário
+                return false;
+            }
+        }
+    </script>
+</head>
 /* Estilos Gerais */
 body {
 font-family: 'Courier New', monospace;
@@ -108,25 +124,6 @@ width: 100%;
         </form>
         <p id="error-message" style="color: red;"></p>
     </div>
-
-    <script>
-function validarLogin() {
-            var usuario = document.getElementById("usuario").value;
-            var senha = document.getElementById("senha").value;
-
-            var usuarioValido = verificarCredenciais(usuario, senha);
-            if (usuarioValido) {
-                window.location.href = "logado.html";
-                // Redirecionar ou executar outras ações após o login bem-sucedido
-            } else {
-                alert("Credenciais inválidas. Tente novamente.");
-            }
-
-            // Impede o envio do formulário
-            return false;
-        }
-    </script>
-    
 </body>
 
 </html>
