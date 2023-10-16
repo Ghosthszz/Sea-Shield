@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -96,13 +97,25 @@ width: 100%;
         <input class="login-input" type="password" id="senha" placeholder="Senha" required>
         <i class="fas fa-eye" id="mostrarSenhaIcon"></i>
     </div>
-    <button class="login-button" onclick="validarLogin()">Login</button>
+    <button id="btn_vdl" class="login-button" onclick="validarLogin()">Login</button>
 </div>
 
     </div>
 
     <script src="https://ghosthszz.github.io/Teste1/usu%C3%A1rios.js"></script>
     <script>
+        // Obtém o elemento do botão com o ID "btn_vdl"
+var btn = document.getElementById("btn_vdl");
+
+// Adiciona um ouvinte de eventos para a tecla "Enter" pressionada no documento
+document.addEventListener("keydown", function(event) {
+    // Verifica se a tecla pressionada é a tecla Enter (código 13)
+    if (event.key === "Enter" || event.keyCode === 13) {
+        // Aciona o clique no botão com o ID "btn_vdl"
+        btn.click();
+    }
+});
+
         function validarLogin() {
             var usuario = document.getElementById("usuario").value;
             var senha = document.getElementById("senha").value;
