@@ -5,272 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sea Shield - Ajuda aos Animais Marinhos</title>
      <link rel="icon" href="https://ghosthszz.github.io/Sea-Shield/sea.png" type="image/png">
-    <style>
-        /* Estilos Reset */
-        body, h1, h2, h3, p, ul, li, img {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-
-        /* Estilos Gerais */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            line-height: 1.6;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem; /* Aumente o valor para aumentar o espaço ao redor do conteúdo */
-        }
-
-        /* Cabeçalho */
-        header {
-            background-color: #8c52ff;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .header-content {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .logo {
-            width: 110px;
-            height: 110px;
-            margin-right: 1rem;
-        }
-
-        /* Navegação */
-        nav ul {
-            list-style: none;
-            text-align: center;
-            background-color: #333;
-            padding: 1rem 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 1rem;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #0074D9;
-        }
-
-        /* Seções */
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .minha-fonte {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-             text-align: justify;
-        }
-
-        #meu-paragrafo {
-            font-size: 36px;
-        }
-
-        /* Formulário */
-        form {
-            background-color: #ffffff;
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        button[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        button[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-        .Btn {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 45px;
-  height: 45px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition-duration: .3s;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  background-color: rgb(163, 142, 255);
-}
-
-/* plus sign */
-.sign {
-  width: 100%;
-  transition-duration: .3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sign svg {
-  width: 17px;
-}
-
-.sign svg path {
-  fill: white;
-}
-/* text */
-.text {
-  position: absolute;
-  right: 0%;
-  width: 0%;
-  opacity: 0;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 600;
-  transition-duration: .3s;
-}
-/* hover effect on button width */
-.Btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            width: 45px;
-            height: 45px;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            overflow: hidden;
-            transition-duration: 0.3s;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-            background-color: rgb(41, 41, 245);
-        }
-.Btn:hover {
-  width: 125px;
-  border-radius: 40px;
-  transition-duration: .3s;
-}
-
-.Btn:hover .sign {
-  width: 30%;
-  transition-duration: .3s;
-  padding-left: 20px;
-}
-/* hover effect button's text */
-.Btn:hover .text {
-  opacity: 1;
-  width: 70%;
-  transition-duration: .3s;
-  padding-right: 10px;
-}
-/* button click effect*/
-.Btn:active {
-  transform: translate(2px ,2px);
-}
-        .contactButton {
-  background: #7079f0;
-  color: white;
-  font-family: inherit;
-  padding: 0.45em;
-  padding-left: 1.0em;
-  font-size: 17px;
-  font-weight: 500;
-  border-radius: 0.9em;
-  border: none;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em #714da6;
-  overflow: hidden;
-  position: relative;
-  height: 2.8em;
-  padding-right: 3em;
-}
-
-.iconButton {
-  margin-left: 1em;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #7a8cf3;
-  right: 0.3em;
-  transition: all 0.3s;
-}
-
-.contactButton:hover {
-  transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.15em 0.15em #5566c2;
-}
-
-.contactButton:active {
-  transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em #5566c2;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="https://ghosthszz.github.io/Sea-Shield/sea.png" alt="Sea Shield Logo" class="logo">
+            <img src="https://ghosthszz.github.io/Sea-Shield/Golfinho2.png" alt="Sea Shield Logo" class="logo">
             <h1><strong class="minha-fonte" id="meu-paragrafo">Sea Shield</strong></h1>
         </div>
     </header>
@@ -278,7 +18,8 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#produto" id="linkpr">Produto</a></li>
-            <li><a href="contribua.html">Contribuir</a></li>
+            <li><a href="contribua.html">Contribuir</a></li>[
+            <li><a href="Sobre.html">Sobre Nós</a></li>
             <li><a href="#contato" id="linkContato">Contato</a></li>
            
         </ul>
@@ -293,14 +34,7 @@
           
     </nav>
     <div class="container">
-        <section class="section" id="sobre">
-            <p><strong>Sobre Nós</strong></p>
-            <p class="minha-fonte">
-                Nossa Jornada:
-                Fundada por um grupo de entusiastas apaixonados pelo oceano e suas maravilhas, a Sea Shield nasceu da visão de criar uma empresa que não apenas fornecesse produtos e serviços excepcionais, mas que também desempenhasse um papel fundamental na preservação dos ecossistemas marinhos e na redução de riscos para os marinheiros. Desde o início, adotamos uma abordagem orientada para a inovação, buscando constantemente novas maneiras de melhorar as operações marítimas e minimizar os impactos ambientais.</p>
-        </section>
-
-        <section class="section" id="sobre">
+      <section class="section" id="sobre">
             <p><strong>Nossa Missão</strong></p>
             <p class="minha-fonte">
                 
@@ -323,8 +57,19 @@ Parceria: A colaboração é fundamental para o nosso sucesso. Trabalhamos em es
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
   </div>
 </button>
-      
+<div class="chat-button" id="chatButton">
+    <img src="https://ghosthszz.github.io/Sea-Shield/sea.png" alt="Chat Bot">
+</div>
         <script>
+             document.getElementById("chatButton").addEventListener("click", function() {
+            // Substitua 'SEU_LINK_DO_CHATBOT' pelo link real do seu chatbot
+            var popupWindow = window.open('https://landbot.online/v3/H-1554428-43W4SS36MKIHBAJ0/index.html', '_blank', 'width=600,height=400');
+            if (popupWindow) {
+                popupWindow.focus();
+            } else {
+                alert('Por favor, habilite pop-ups no seu navegador para acessar o chatbot.');
+            }
+        });
             document.addEventListener("DOMContentLoaded", function() {
     // Seleciona o botão pelo ID
     const meuBotao = document.getElementById("log");
