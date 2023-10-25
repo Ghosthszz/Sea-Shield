@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -40,8 +39,17 @@ main {
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: justify;  
+  text-align: center;  
+  align-items: center;
 }
+#text_product {
+  text-align: justify;  
+  font-weight: bold;
+}
+#produtt {
+    text-align: justify;  
+}
+
 
 .product img {
   max-width: 100%;
@@ -302,16 +310,16 @@ header {
 
   <main>
     <section class="product">
-      <img src="product_image.jpg" alt="Produto Sea Shield">
+      <img id="text_product" src="projeto.png" alt="Produto Sea Shield">
       <h2>Submarino marine</h2>
-      <p>Rede de Limpeza Oceanica da Sea Shield. Esta rede inteligente e sustentável é a resposta à crescente preocupação com a poluição dos oceanos. Projetada para capturar detritos marinhos e plásticos, nossa rede não só limpa, mas também protege a vida marinha. Cada peça de lixo removida é um passo em direção a um oceano mais limpo e seguro para todos os habitantes aquáticos. Junte-se a nós para um futuro marinho mais brilhante com a Rede de Limpeza Oceanica da Sea Shield.</p>
-      <p>Preço: R$3.000,00</p>
+      <p id="produtt" >Rede de Limpeza Oceanica da Sea Shield. Esta rede inteligente e sustentável é a resposta à crescente preocupação com a poluição dos oceanos. Projetada para capturar detritos marinhos e plásticos, nossa rede não só limpa, mas também protege a vida marinha. Cada peça de lixo removida é um passo em direção a um oceano mais limpo e seguro para todos os habitantes aquáticos. Junte-se a nós para um futuro marinho mais brilhante com a Rede de Limpeza Oceanica da Sea Shield.</p>
+      <p id="text_product" >Preço: R$3.000,00</p>
      
-        <a href="pag.html"> <div id="cmp" data-tooltip="Comprar" class="button">
+        <a id="produtt" href="pag.html"> <div id="produtt" data-tooltip="Comprar" class="button">
 <div class="button-wrapper">
-  <div id="cmp" class="text">Buy Now</div>
+  <div id="produtt" class="text">Buy Now</div>
     <span class="icon">
-      <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+      <svg id="produtt" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
   <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
 </svg>
     </span>
