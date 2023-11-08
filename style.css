@@ -88,7 +88,9 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            
+            position: fixed;
+            bottom:0;
+            width:100%;
            
         }
 
@@ -282,8 +284,9 @@
     border-radius: 50%;
     overflow: hidden;
     position: fixed;
-    bottom: 20px; /* Distância do botão até a borda inferior da janela */
-    right: 20px; /* Distância do botão até a borda direita da janela */
+    bottom: 20px; 
+    right: 10px; 
+    top: 80%;
 }
 
 .chat-button img {
@@ -393,4 +396,3 @@
             margin-right: 1rem;
     }
 }
-
