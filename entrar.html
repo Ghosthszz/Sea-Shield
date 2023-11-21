@@ -81,6 +81,18 @@ width: 100%;
     cursor: pointer;
 }
 
+#button-back {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      padding: 10px 15px;
+      background-color: gray;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
     </style>
 </head>
@@ -99,11 +111,14 @@ width: 100%;
     </div>
     <button id="btn_vdl" class="login-button" onclick="validarLogin()">Login</button>
 </div>
-
+<button id="button-back" onclick="goBack()">Voltar</button>
     </div>
 
     <script src="https://ghosthszz.github.io/Teste1/users.js"></script>
     <script>
+function goBack() {
+    window.history.back();
+  }
         // Obtém o elemento do botão com o ID "btn_vdl"
 var btn = document.getElementById("btn_vdl");
 
