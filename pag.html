@@ -34,7 +34,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem; /* Aumente o valor para aumentar o espaço ao redor do conteúdo */
+  padding: 4rem; 
 }
 
 /* Cabeçalho */
@@ -87,12 +87,15 @@ nav ul li a:hover {
 }
 
 /* Rodapé */
-footer {
+        footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1rem;
-}
+  bottom:0;
+  width:100%;
+           
+ }
 
 .minha-fonte {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -186,7 +189,7 @@ button[type="submit"]:hover {
   transition-duration: .3s;
 }
 
-/* hover effect on button width */
+
 .Btn {
   position: absolute;
   top: 20px;
@@ -217,7 +220,6 @@ button[type="submit"]:hover {
   padding-left: 20px;
 }
 
-/* hover effect button's text */
 .Btn:hover .text {
   opacity: 1;
   width: 70%;
@@ -225,7 +227,6 @@ button[type="submit"]:hover {
   padding-right: 10px;
 }
 
-/* button click effect*/
 .Btn:active {
   transform: translate(2px ,2px);
 }
@@ -316,18 +317,6 @@ button[type="submit"]:hover {
             background-color: #005fa6;
         }
 
-        
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  position: fixed; /* Correção: posição fixa */
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Adicionei para garantir que o rodapé ocupe toda a largura */
-}
-
 /* Estilos para o Pop-up */
 .popup-overlay {
   display: none;
@@ -356,7 +345,7 @@ footer {
   cursor: pointer;
 }
 
-/* Estilos para a animação de carregamento */
+
 @keyframes loading {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -379,8 +368,8 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Cor e transparência da camada escura */
-  z-index: 999; /* Certifique-se de que a camada escura esteja na parte superior */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,8 +435,9 @@ footer {
                 </div>
         </div>
     </main>
-    <footer>
-        <!-- Seu rodapé -->
+       <footer>
+        <p>&copy; 2023 Sea Shield - Ajuda aos Animais Marinhos</p>
+        <li style="color: rgb(241, 236, 236);"><a href=".html">Termos de Serviço</a></li>
     </footer>
 
     <script>
