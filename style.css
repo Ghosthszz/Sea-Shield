@@ -88,10 +88,9 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            bottom:0;
-            width:100%;
-           
+            text-align: center;
         }
+
 
         .minha-fonte {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
