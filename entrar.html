@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -137,10 +138,12 @@ document.addEventListener("keydown", function(event) {
 
             var usuarioValido = verificarCredenciais(usuario, senha);
             if (usuarioValido) {
-                // Redireciona para a página logado.html
                 window.location.href = "logado.html";
+                document.getElementById('usuario').value = '';
+
             } else {
                 alert("Credenciais inválidas. Tente novamente.");
+                document.getElementById('senha').value = '';
             }
         }
         function checkEnter(event) {
