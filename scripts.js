@@ -6,7 +6,7 @@ function validarLogin() {
 }
 
 function autenticarUsuario(usuario, senha) {
-    var githubToken = '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';
+    var githubToken = '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';
     var owner = 'ghosthszz';
     var repo = 'Teste1';
     var filePath = 'abc123xyz456qwerty789link987abcdef1234567890.js';
