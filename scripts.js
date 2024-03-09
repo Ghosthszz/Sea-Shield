@@ -1,6 +1,5 @@
-<script src="https://ghosthszz.github.io/Teste1/users.js"></script>
-  
 
+  
         function goBack() {
             window.history.back();
         }
