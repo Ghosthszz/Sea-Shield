@@ -1,5 +1,6 @@
 <script src="https://ghosthszz.github.io/Teste1/users.js"></script>
-    <script>
+  
+
         function goBack() {
             window.history.back();
         }
@@ -48,4 +49,4 @@
                 mostrarSenhaIcon.classList.add('fa-eye');
             }
         });
-    </script>
+    
