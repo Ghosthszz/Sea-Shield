@@ -1,0 +1,30 @@
+[
+  {
+    "code": "COD-o9h8lv3r9xj",
+    "name": "Gustavo",
+    "msg": "Opa teste",
+    "id_links": [
+      "1",
+      "3"
+    ],
+    "status": "false"
+  },
+  {
+    "code": "COD-ca0n21frmor",
+    "name": "aaa",
+    "msg": "aa",
+    "id_links": [
+      "1"
+    ],
+    "status": "true"
+  },
+  {
+    "code": "COD-3nkovowh3kb",
+    "name": "aa",
+    "msg": "aaa",
+    "id_links": [
+      "1"
+    ],
+    "status": "true"
+  }
+]
