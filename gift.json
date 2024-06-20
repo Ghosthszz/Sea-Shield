@@ -72,5 +72,17 @@
       "2"
     ],
     "status": "false"
+  },
+  {
+    "code": "COD-c1rijgtxnm",
+    "name": "Cavalo",
+    "msg": "porra filha da puta\n",
+    "id_links": [
+      "1",
+      "3",
+      "11",
+      "18"
+    ],
+    "status": "true"
   }
 ]
