@@ -249,5 +249,14 @@
       "25"
     ],
     "status": "false"
+  },
+  {
+    "code": "COD-dvzxcn2acn8",
+    "name": "Vendas ",
+    "msg": "Prezados,\n\nPedimos desculpas pelo nosso erro.\n\nAtenciosamente,\n\nEquipe de Vendas",
+    "id_links": [
+      "28"
+    ],
+    "status": "true"
   }
 ]
