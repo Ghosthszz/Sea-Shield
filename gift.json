@@ -298,5 +298,15 @@
       "36"
     ],
     "status": "false"
+  },
+  {
+    "code": "COD-0ed7ep4m4tq",
+    "name": "Equipe Vendas",
+    "msg": "Prezados,\n\nPedimos desculpas pelo nosso erro.\n\nAtenciosamente,\n\nEquipe de Vendas",
+    "id_links": [
+      "35",
+      "36"
+    ],
+    "status": "true"
   }
 ]
