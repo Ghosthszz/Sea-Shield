@@ -308,23 +308,5 @@
       "36"
     ],
     "status": "true"
-  },
-  {
-    "code": "COD-xvluoi8wt7o",
-    "name": "Blk",
-    "msg": "Teste",
-    "id_links": [
-      "1"
-    ],
-    "status": "false"
-  },
-  {
-    "code": "COD-xvluoi8wt7o",
-    "name": "Bl",
-    "msg": "Te",
-    "id_links": [
-      "2"
-    ],
-    "status": "true"
   }
 ]
