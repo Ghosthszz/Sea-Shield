@@ -398,5 +398,14 @@
       "25"
     ],
     "status": "false"
+  },
+  {
+    "code": "COD-99bv9a664sp",
+    "name": "La bella secrets",
+    "msg": "Prezada(o) \"secret\",\n\nPedimos desculpas pelo erro ocorrido e lamentamos que sua experiência em nosso site tenha sido afetada. Como forma de retribuição, estamos oferecendo este presente para você.\n\nAtenciosamente,\nEquipe La Bella Secrets",
+    "id_links": [
+      "40"
+    ],
+    "status": "true"
   }
 ]
