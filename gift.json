@@ -483,5 +483,15 @@
       "44"
     ],
     "status": "true"
+  },
+  {
+    "code": "COD-nmfby5z20wr",
+    "name": "USER_ANONIMO",
+    "msg": "Teste dos novos packs ",
+    "id_links": [
+      "43",
+      "44"
+    ],
+    "status": "true"
   }
 ]
