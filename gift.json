@@ -452,5 +452,18 @@
       "fb"
     ],
     "status": "false"
+  },
+  {
+    "code": "COD-qi9eae87itj",
+    "name": "USER_ANONIMO",
+    "msg": "Teste dos novos packs \n\n\nLA BELLA SECRETS",
+    "id_links": [
+      "41",
+      "42",
+      "43",
+      "44",
+      "46"
+    ],
+    "status": "true"
   }
 ]
