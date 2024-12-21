@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         meuBotao.addEventListener("click", function () {
             const userId = getCookie('user_id');
             if (!userId) {
-                window.location.href = "https://ghosthszz.github.io.Sea-Shield/frontend/paginas/login/entrar.html";
+                window.location.href = "https://ghosthszz.github.io/Sea-Shield/frontend/paginas/login/entrar.html";
             }
         });
     }
