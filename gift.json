@@ -683,5 +683,14 @@
       "fb"
     ],
     "status": "true"
+  },
+  {
+    "code": "COD-98l5i4h7hyg",
+    "name": "Gustavo",
+    "msg": "teste api (reed_cht)",
+    "id_links": [
+      "48"
+    ],
+    "status": "true"
   }
 ]
