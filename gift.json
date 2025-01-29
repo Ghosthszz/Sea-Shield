@@ -692,5 +692,15 @@
       "48"
     ],
     "status": "false"
+  },
+  {
+    "code": "COD-nfx19tzl9sr",
+    "name": "Gustavo",
+    "msg": "teste api (reed_cht and ananda)",
+    "id_links": [
+      "4",
+      "48"
+    ],
+    "status": "true"
   }
 ]
