@@ -796,5 +796,15 @@
       "50"
     ],
     "status": "true"
+  },
+  {
+    "code": "COD-a4dbhqhe9ub",
+    "name": "Blk",
+    "msg": "Test api, rote \"/login\"",
+    "id_links": [
+      "49",
+      "50"
+    ],
+    "status": "true"
   }
 ]
