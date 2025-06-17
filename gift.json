@@ -816,5 +816,14 @@
       "10"
     ],
     "status": "false"
+  },
+  {
+    "code": "COD-afljx0w5t5g",
+    "name": "GBLK",
+    "msg": "TESTE API PAYMENTS",
+    "id_links": [
+      "18"
+    ],
+    "status": "true"
   }
 ]
