@@ -92,5 +92,10 @@
     "name": "Luiza",
     "username": "cp",
     "password": "cp1090"
+  },
+  {
+    "name": "teste",
+    "username": "NOME1",
+    "password": "nome"
   }
 ]
