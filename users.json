@@ -97,5 +97,10 @@
     "name": "teste",
     "username": "NOME1",
     "password": "nome"
+  },
+  {
+    "name": "teste1",
+    "username": "t3",
+    "password": "t3"
   }
 ]
