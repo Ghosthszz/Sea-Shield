@@ -102,5 +102,10 @@
     "name": "teste1",
     "username": "t3",
     "password": "t3"
+  },
+  {
+    "name": "isabella maria",
+    "username": "isa",
+    "password": "1234567"
   }
 ]
